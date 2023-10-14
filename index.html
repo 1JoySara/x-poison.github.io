@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="custom-style.css"/>
+    
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+        <label for="phone" id="style2">Phone Number</label>
+        <input type="tel" id="style" name="phone" pattern="[+]?\d{1,3}\d{9,14}" placeholder="Number" required>
+        
+        <div class="password-container">
+            <label for="phone" id="style2">Password</label>
+            <input type="password" id="password" class="password-input" name="password" placeholder="Password"  required>
+            <span class="toggle-password" id="togglePassword">
+                <img src="./assets/eye.png" alt="Show Password" width="20">
+            </span><br>
+        </div><br>
+        <button type="submit" id="style2">Login</button>
+    </form>
+<div class="refer">
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+</div><br>
+<div class="refer">
+    <p>Forgot password? <a href="reset_pass.html">Reset</a></p>
+</div>
+<script src="script.js">
+</script>/>
+</body>
+</html>
