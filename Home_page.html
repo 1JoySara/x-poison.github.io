@@ -11,12 +11,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url(./assets/login_background.jpg);
+        }
+     
+        .navbar {
+            display: none;
+            /* your CSS styles for the navigation bar */
         }
 
-        .navbar {
-            overflow: hidden;
-            background-color: #333;
+        .show-navbar {
+            display: block;
         }
+        
+
 
         .navbar a {
             float: left;
@@ -40,19 +47,34 @@
                 text-align: left;
             }
         }
+
+        img{
+            border-radius: 50%;
+            width: 40px;
+            height: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
     </style>
 </head>
 
 <body>
 
+    <button onclick="toggleNavbar()">
+        <img src="assets/nav.png" alt="Menu Icon">
+        See Menu</button>
     <div class="navbar">
         <a href="#home">Home</a>
         <a href="#books">Books</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a href="index.html">Login</a>
     </div>
 
     <h1 style="text-align: center; margin-top: 50px;">WELCOME TO BOOKCLUB</h1>
+
+    <script src="script.js"></script>
 
 </body>
 

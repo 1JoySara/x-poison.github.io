@@ -23,27 +23,8 @@ function validateForm() {
     }
 }
 
-// function validateForm() {
-//     var yearInput = document.getElementById("yearofstudies");
-//     var yearError = document.getElementById("yearError");
-
-//     // Reset error message
-//     yearError.textContent = "";
-
-//     // Parse the input value to ensure it's treated as a number
-//     var yearValue = parseInt(yearInput.value);
-
-//     // Check if the parsed input value is a valid number
-//     if (isNaN(yearValue)) {
-//         yearError.textContent = "Year of Studies must be a number.";
-//         return false; // Prevent form submission
-//     }
-
-//     // Check if the parsed input value is within the valid range
-//     if (yearValue < 1 || yearValue > 4) {
-//         yearError.textContent = "Year of Studies must be a number between 1 and 4.";
-//         return false; // Prevent form submission
-//     }
-// }
-
+function toggleNavbar() {
+    var navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('show-navbar');
+}
 
