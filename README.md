@@ -1,5 +1,5 @@
 # Bookclub
-![seclists.png](SecLists.png "seclists.png")
+![books.jpeg](/assets/books.jpeg "books.jpeg")
 
 ````
 Key Features:
