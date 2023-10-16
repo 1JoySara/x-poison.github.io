@@ -49,10 +49,28 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff;
-    font-size: 12px;
+    color: black;
+    font-size: 15px;
     font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
 }
+
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Set the initial position below the link */
+    left: 0;
+    width: 0;
+    height: 2px; /* Set the height and color of the moving line */
+    background-color: blue;
+    transition: width 0.3s ease; /* Add a transition for smooth movement */
+}
+
+.navbar ul li a:hover::before {
+    width: 100%; /* Expand the line to 100% width on hover */
+}
+
 .row{
     width: 85%;
     display: flex;
