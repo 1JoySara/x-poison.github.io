@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+</head>
+
+<body>
+    <h1>Video Downloader</h1>
+    <form id="downloadForm">
+        <label for="videoLink">Enter Video URL:</label>
+        <input type="text" id="videoLink" name="videoLink" required>
+        <button type="submit">Download</button>
+    </form>
+
+    <script>
+        document.getElementById("downloadForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var videoLink = document.getElementById("videoLink").value;
+            window.location.href = "download.php?videoLink=" + encodeURIComponent(videoLink);
+        });
+    </script>
+</body>
+
+</html>
