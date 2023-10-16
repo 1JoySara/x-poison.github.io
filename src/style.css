@@ -15,6 +15,7 @@
 .header{
     width: 100%;
     background: rgba(0,0,0,0.4);
+    background-color: #00000000;
     position: absolute;
     top: 0;
     z-index: 10;
@@ -31,8 +32,9 @@
 }
 .logo img{
     width: 100px;
-    margin: 7px 0;
+    margin: 3px 0;
     cursor: pointer;
+    float: left;
 }
 .navbar ul{
     flex: 1;
@@ -49,8 +51,9 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.3s ease;
     position: relative;
@@ -59,12 +62,12 @@
 .navbar ul li a::before {
     content: "";
     position: absolute;
-    bottom: -2px; /* Set the initial position below the link */
+    bottom: -2px; 
     left: 0;
     width: 0;
-    height: 2px; /* Set the height and color of the moving line */
+    height: 2px;
     background-color: blue;
-    transition: width 0.3s ease; /* Add a transition for smooth movement */
+    transition: width 0.3s ease;
 }
 
 .navbar ul li a:hover::before {
