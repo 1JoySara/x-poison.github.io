@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.credits-container {
+    text-align: center;
+}
+
+.credits-container h1 {
+    font-size: 36px;
+}
+
+.credits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.credits-list li {
+    margin: 10px 0;
+}
+
+.credits-list li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
