@@ -80,12 +80,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    align-items: center;
 }
 
 .login-card-form .form-item {
     position: relative;
-    text-align: center;
 }
 
 .login-card-form .form-item .form-item-icon {
