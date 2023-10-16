@@ -85,7 +85,7 @@ body {
 
 .login-card-form .form-item {
     position: relative;
-    width: 70%;
+    text-align: center;
 }
 
 .login-card-form .form-item .form-item-icon {
