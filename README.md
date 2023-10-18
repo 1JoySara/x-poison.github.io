@@ -1,6 +1,4 @@
-# Bookclub
-![books.jpeg](/assets/books.jpeg "books.jpeg")
-
+# Bookclu
 ````
 Key Features:
 
