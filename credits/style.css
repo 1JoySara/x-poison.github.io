@@ -16,7 +16,7 @@ body {
     top: 20%;
 }
 
-.credits-list {
+.main-container .credits-list {
     list-style: none;
     padding: 0;
     background-color: #0000;
@@ -30,9 +30,20 @@ body {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    color: black;
 }
 
 .main-container .credits-list li{
     background-color: #1eff;
     text-align: center;
+    width: 100%;
+    height: 33px;
+    color: black;
+}
+
+.main-container .credits-list li:hover{
+    background-color: black;
+    border-radius: 10px;
+    border: 2px dotted red;
+    
 }
