@@ -30,7 +30,11 @@ body {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
-    color: black;
+    /* color: black; */
+}
+
+.credits-list li a:hover{
+    color: white;
 }
 
 .main-container .credits-list li{
@@ -38,12 +42,12 @@ body {
     text-align: center;
     width: 100%;
     height: 33px;
-    color: black;
+
 }
 
 .main-container .credits-list li:hover{
     background-color: black;
     border-radius: 10px;
     border: 2px dotted red;
-    
+    text-decoration: white;
 }
