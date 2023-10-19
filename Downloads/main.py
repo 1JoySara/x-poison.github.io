@@ -10,7 +10,6 @@ def index():
 def submit():
     name = request.form['name']
     email = request.form['email']
-    # Process the data as needed
     return f'Name: {name}, Email: {email}'
 
 if __name__ == '__main__':
