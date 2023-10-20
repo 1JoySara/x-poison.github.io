@@ -1,19 +1,15 @@
 import yt_dlp
 import os
 
-if not os.path.exists('Downloads'):
-    os.makedirs('Downloads')
-
 while True:
     try:
         url = input('Give me Link (or type "exit" to quit): ')
         
         if url.lower() == 'exit':
-            print('Exiting program...')
+            print('Bye...')
             break
-        
         ydl_opts = {
-            'outtmpl': 'Downloads/%(title)s.%(ext)s' 
+            'outtmpl': os.path.join(os.path.expanduser("~"), "Downloads", "%(title)s.%(ext)s")
         }
         
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
