@@ -1,0 +1,31 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+h1{
+    color: white;
+}
+
+.wrapper{
+width: 25%;
+padding: 20px;
+justify-content: center;
+background-color: grey;
+padding: 50px;
+box-shadow: 10px 10px 5px rgb(82, 11, 77);
+margin: 120px auto;
+text-align: center;
+}
+
+.wrapper .container li a{
+    color: bisque;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 24px;
+    text-decoration: none;
+}
