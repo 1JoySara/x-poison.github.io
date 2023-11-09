@@ -24,36 +24,42 @@
                 <h1>Register</h1>
                 <div>Please register to use the platform</div>
             </div>
-            <form action="index.php" method="post" class="login-card-form">
+            <form id="form" class="login-card-form">
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">person</span>
-                    <input type="text" name="first" placeholder="First Name" id="emailForm"
+                    <input type="text" name="first" placeholder="First Name" id="firstName"
                     autofocus required>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">person</span>
-                    <input type="text" name="second" placeholder="Second Name" id="passwordForm"
+                    <input type="text" name="second" placeholder="Second Name" id="secondName"
                      required>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">call</span>
-                    <input type="tel" name="phone" pattern="[0-9]+" placeholder="Phone Number" id="passwordForm" 
+                    <input type="tel" name="phone" pattern="[0-9]+" placeholder="Phone Number" id="phoneNumber" 
                     autofocus required>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">mail</span>
+                    <input type="email" name="email" placeholder="Email" id="emailaddress"
+                     required>
                 </div>
                 
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">school</span>
-                    <input type="text" name="university" placeholder="University Name" id="passwordForm"
+                    <input type="text" name="university" placeholder="University Name" id="schoolName"
                      required>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">lock</span>
-                    <input type="password" name="password" placeholder="Password" id="passwordForm"
+                    <input type="password" name="password" placeholder="Password" id="password_1"
                      required>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">lock</span>
-                    <input type="password" placeholder="Repeat password" id="passwordForm"
+                    <input type="password" placeholder="Repeat password" id="password_2"
                      required>
                 </div>
                 <div class="form-item-other">
@@ -76,6 +82,7 @@
             </div>
         </div>
         
+        <script src="scripts/register.js"></script>
 
 </body>
 
