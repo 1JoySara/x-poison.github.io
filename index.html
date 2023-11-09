@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
     <title>Login Page</title>
+    <style>
+        /* Add the provided CSS styles here */
+        .password-valid {
+            border: 2px solid green;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px green;
+        }
+
+        .password-validation-icon::before {
+            content: "\2713"; /* Unicode character for a checkmark */
+            color: green;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        .password-valid .password-validation-icon::before {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>

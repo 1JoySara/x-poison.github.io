@@ -7,12 +7,15 @@ document.getElementById("form").addEventListener('submit', function(event){
     var password = document.getElementById("password_1").value;
     var password_2 = document.getElementById("password_2").value;
     const password_error = "Passwords don't match";
+    const password_requirements_error = "Password must be at least 8 characters long, contain at least one special character, one uppercase letter, and four digits.";
+    var passwordPattern = /^(?=.*[!@#$%^&*(),.?":{}|<>])(?=.*\d{4,})(?=.*[A-Z]).{8,}$/;
 
-    if(password !== password_2){
+    if (!passwordPattern.test(password)) {
+        alert(password_requirements_error);
+        event.preventDefault();
+    } else if (password !== password_2) {
         alert(password_error);
         event.preventDefault();
     }
 
-    // console.log(password);
-    console.log(password_2);
 });
